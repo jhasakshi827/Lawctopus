@@ -2297,29 +2297,161 @@ DRAFT CAROUSEL
     right:-60px;
 }
 
-@media(max-width:992px){
+/* ==================================
+   Large Tablets (992px and below)
+================================== */
 
-.draft-card{
+@media (max-width: 992px){
 
-    flex:0 0 calc((100% - 30px)/2);
+    .drafting-section{
+        padding:80px 0;
+    }
 
-    min-width:calc((100% - 30px)/2);
+    .draft-track{
+        gap:20px;
+    }
+
+    .draft-card{
+        flex:0 0 calc((100% - 20px) / 2);
+        max-width:calc((100% - 20px) / 2);
+        height:240px;
+        padding:25px 20px;
+    }
+
+    .draft-card h4{
+        font-size:17px;
+    }
+
+    .draft-btn{
+        width:46px;
+        height:46px;
+        font-size:16px;
+    }
+
+    .prev{
+        left:5px;
+    }
+
+    .next{
+        right:5px;
+    }
 
 }
 
+
+/* ==================================
+   Mobile (768px and below)
+================================== */
+
+@media (max-width:768px){
+
+    .drafting-section{
+        padding:70px 0;
+    }
+
+    .draft-slider{
+        width:100%;
+        margin-top:40px;
+    }
+
+    .draft-track{
+        gap:15px;
+    }
+
+    .draft-card{
+
+        flex:0 0 85%;
+
+        max-width:85%;
+
+        height:220px;
+
+        padding:22px 18px;
+
+        margin:auto;
+
+    }
+
+    .draft-card i{
+
+        width:60px;
+        height:60px;
+
+        font-size:24px;
+
+        margin-bottom:18px;
+
+    }
+
+    .draft-card h4{
+
+        font-size:16px;
+
+        line-height:1.4;
+
+        min-height:auto;
+
+    }
+
+    .draft-btn{
+
+        width:42px;
+        height:42px;
+
+        font-size:14px;
+
+    }
+
+    .prev{
+        left:8px;
+    }
+
+    .next{
+        right:8px;
+    }
+
 }
 
-@media(max-width:768px){
 
-.draft-card{
+/* ==================================
+   Small Phones (480px and below)
+================================== */
 
-    flex:0 0 100%;
+@media (max-width:480px){
 
-    min-width:100%;
+    .draft-card{
 
-}
+        flex:0 0 92%;
 
-}
+        max-width:92%;
 
-/*------------*/
+        height:210px;
+
+        padding:20px 15px;
+
+    }
+
+    .draft-card i{
+
+        width:55px;
+        height:55px;
+
+        font-size:22px;
+
+    }
+
+    .draft-card h4{
+
+        font-size:15px;
+
+    }
+
+    .draft-btn{
+
+        width:38px;
+        height:38px;
+
+    }
+
+}/*------------*/
 
